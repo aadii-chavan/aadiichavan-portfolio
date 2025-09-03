@@ -28,17 +28,7 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-10">
-          <div className="flex flex-col items-center gap-4">
-            <img
-              src="https://i.pravatar.cc/120?img=3"
-              alt="Profile"
-              className="w-24 h-24 rounded-full ring-4 ring-white/10 shadow-lg"
-            />
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">
-              <span className="inline-block w-4 h-4 rounded bg-white/80" />
-              Verified Expert
-            </div>
-          </div>
+          <div className="flex flex-col items-center gap-4" />
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white/90">
@@ -54,14 +44,14 @@ const Hero: React.FC = () => {
               onClick={() => scrollToSection('#projects')}
               className="px-6 py-3 rounded-xl font-semibold text-white bg-black/70 hover:bg-black transition-colors shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
             >
-              Remix Template
+              View Project
               <span className="ml-2 inline-block"><ArrowRight size={18} /></span>
             </button>
             <button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection('#about')}
               className="px-6 py-3 rounded-xl font-semibold text-white/90 bg-white/10 border border-white/10 hover:bg-white/15 transition-colors"
             >
-              Get Athos Plus
+              Meet Team
             </button>
           </div>
 
