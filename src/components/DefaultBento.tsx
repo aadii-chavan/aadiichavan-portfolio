@@ -125,7 +125,7 @@ const ParticleCard: React.FC<{
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement[]>([]);
-  const timeoutsRef = useRef<NodeJS.Timeout[]>([]);
+  const timeoutsRef = useRef<number[]>([]);
   const isHoveredRef = useRef(false);
   const memoizedParticles = useRef<HTMLDivElement[]>([]);
   const particlesInitialized = useRef(false);
@@ -228,8 +228,14 @@ const ParticleCard: React.FC<{
         gsap.to(element, {
           rotateX: 0,
           rotateY: 0,
+          transformPerspective: 800,
+          transformOrigin: 'center',
           duration: 0.3,
-          ease: 'power2.out'
+          ease: 'power2.out',
+          onComplete: () => {
+            element.style.transform = '';
+            element.style.transformStyle = '';
+          }
         });
       }
 
@@ -255,14 +261,15 @@ const ParticleCard: React.FC<{
       if (enableTilt) {
         const rotateX = ((y - centerY) / centerY) * -10;
         const rotateY = ((x - centerX) / centerX) * 10;
-
         gsap.to(element, {
           rotateX,
           rotateY,
-          duration: 0.1,
+          transformPerspective: 800,
+          transformOrigin: 'center',
+          duration: 0.15,
           ease: 'power2.out',
-          transformPerspective: 1000
         });
+        element.style.transformStyle = 'preserve-3d';
       }
 
       if (enableMagnetism) {
@@ -489,7 +496,7 @@ const GlobalSpotlight: React.FC<{
 
 const BentoCardGrid: React.FC<{
   children: React.ReactNode;
-  gridRef?: React.RefObject<HTMLDivElement | null>;
+  gridRef?: React.RefObject<HTMLDivElement>;
 }> = ({ children, gridRef }) => (
   <div
     className="bento-section grid gap-2 p-3 max-w-[54rem] select-none relative"
@@ -674,7 +681,7 @@ const MagicBento: React.FC<BentoProps> = ({
       <BentoCardGrid gridRef={gridRef}>
         <div className="card-responsive grid gap-2">
           {cardData.map((card, index) => {
-            const baseClassName = `card flex flex-col justify-between relative aspect-[4/3] min-h-[200px] w-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
+            const baseClassName = `card flex flex-col justify-between relative aspect-[4/3] min-h-[200px] w-full max-w-full p-5 rounded-[20px] border border-solid border-[1.5px] font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? 'card--border-glow' : ''
             }`;
 

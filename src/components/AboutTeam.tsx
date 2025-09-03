@@ -43,18 +43,20 @@ const AboutTeam: React.FC = () => {
           </div>
 
           <div>
-            <MagicBento 
-              textAutoHide={true}
-              enableStars={true}
-              enableSpotlight={true}
-              enableBorderGlow={true}
-              enableTilt={true}
-              enableMagnetism={true}
-              clickEffect={true}
-              spotlightRadius={300}
-              particleCount={12}
-              glowColor="132, 0, 255"
-            />
+            <div className="lg:scale-125 md:scale-110 scale-105 transition-transform duration-300" style={{maxWidth: 'none'}}>
+              <MagicBento 
+                textAutoHide={true}
+                enableStars={true}
+                enableSpotlight={true}
+                enableBorderGlow={true}
+                enableTilt={true}
+                enableMagnetism={true}
+                clickEffect={true}
+                spotlightRadius={300}
+                particleCount={12}
+                glowColor="132, 0, 255"
+              />
+            </div>
           </div>
         </div>
       </div>
