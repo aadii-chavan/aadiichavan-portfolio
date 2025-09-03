@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Strength } from '../data/teamData';
 import { Code, Workflow, Rocket, Palette, Users, CheckCircle2 } from 'lucide-react';
 import SpotlightCard from './SpotlightCard';
@@ -22,27 +22,75 @@ const getIconForStrength = (title: string) => {
 
 const StrengthCard: React.FC<StrengthCardProps> = ({ strength, index, spotlightColor = 'rgba(132, 0, 255, 0.25)' }) => {
   const IconComponent = getIconForStrength(strength.title);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const [tiltX, setTiltX] = useState(0);
+  const [tiltY, setTiltY] = useState(0);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    
+    const rect = cardRef.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    const mouseX = e.clientX - centerX;
+    const mouseY = e.clientY - centerY;
+    
+    const maxTilt = 15; // Maximum tilt angle in degrees
+    const tiltXValue = (mouseY / (rect.height / 2)) * maxTilt;
+    const tiltYValue = -(mouseX / (rect.width / 2)) * maxTilt;
+    
+    setTiltX(tiltXValue);
+    setTiltY(tiltYValue);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    setTiltX(0);
+    setTiltY(0);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
 
   return (
-    <SpotlightCard
-      spotlightColor={spotlightColor}
-      className="transition-transform card-hover"
+    <div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      onMouseEnter={handleMouseEnter}
+      className="perspective-1000"
+      style={{
+        transformStyle: 'preserve-3d',
+        transform: isHovered 
+          ? `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.02, 1.02, 1.02)`
+          : 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)',
+        transition: 'transform 0.3s ease-out',
+        animationDelay: `${index * 100}ms`,
+      }}
     >
-      <div className="space-y-4">
-        <div className="inline-flex items-center justify-center w-12 h-12 bg-white/[0.05] rounded-lg border border-white/10">
-          <IconComponent className="w-6 h-6 text-white/80" />
+      <SpotlightCard
+        spotlightColor={spotlightColor}
+        className="transition-all duration-300"
+      >
+        <div className="space-y-4">
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-white/[0.05] rounded-lg border border-white/10">
+            <IconComponent className="w-6 h-6 text-white/80" />
+          </div>
+          
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold text-white/90">
+              {strength.title}
+            </h3>
+            <p className="text-white/70 text-sm leading-relaxed">
+              {strength.description}
+            </p>
+          </div>
         </div>
-        
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-white/90">
-            {strength.title}
-          </h3>
-          <p className="text-white/70 text-sm leading-relaxed">
-            {strength.description}
-          </p>
-        </div>
-      </div>
-    </SpotlightCard>
+      </SpotlightCard>
+    </div>
   );
 };
 
