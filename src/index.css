@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animated outline for CTA button */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -600;
+  }
+}
+
+.animate-dash {
+  animation: dash 6s linear infinite;
+  stroke-dasharray: 180 20;
+}
+
 :root {
   --bg-primary: #000000;
   --bg-secondary: #000000;
