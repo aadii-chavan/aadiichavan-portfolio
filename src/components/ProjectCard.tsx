@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Star } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '../data/teamData';
 
 interface ProjectCardProps {
@@ -8,19 +8,16 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 card-hover relative overflow-hidden">
-      {project.featured && (
-        <div className="absolute top-4 right-4">
-          <Star className="w-5 h-5 text-yellow-400 fill-current" />
-        </div>
-      )}
-      
-      <div className="space-y-4">
-        <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-[#f0f6fc] leading-tight">
+    <div 
+      className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-transform card-hover h-80"
+      style={{ boxShadow: '0 0 40px rgba(132, 0, 255, 0.15)' }}
+    >
+      <div className="space-y-4 h-full flex flex-col">
+        <div className="space-y-2 flex-grow">
+          <h3 className="text-xl font-semibold text-white/90 leading-tight">
             {project.title}
           </h3>
-          <p className="text-[#8b949e] leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             {project.description}
           </p>
         </div>
@@ -29,19 +26,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.tags.map((tag) => (
             <span 
               key={tag}
-              className="px-3 py-1 bg-[#0d1117] border border-[#30363d] rounded-full text-xs text-[#58a6ff] font-medium"
+              className="px-3 py-1 bg-white/[0.05] border border-white/10 rounded-full text-xs text-[#58a6ff] font-medium"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="flex items-center justify-between pt-4 border-t border-[#30363d]">
+        <div className="flex items-center justify-between pt-4 border-t border-white/10 mt-auto">
           <div className="flex space-x-3">
             {project.github && (
               <a 
                 href={project.github}
-                className="text-[#8b949e] hover:text-[#58a6ff] transition-colors flex items-center gap-1 text-sm"
+                className="text-white/70 hover:text-[#58a6ff] transition-colors flex items-center gap-1 text-sm"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -52,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.link && (
               <a 
                 href={project.link}
-                className="text-[#8b949e] hover:text-[#58a6ff] transition-colors flex items-center gap-1 text-sm"
+                className="text-white/70 hover:text-[#58a6ff] transition-colors flex items-center gap-1 text-sm"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -61,10 +58,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </a>
             )}
           </div>
-          
-          {project.featured && (
-            <span className="text-xs text-yellow-400 font-medium">Featured</span>
-          )}
         </div>
       </div>
     </div>

@@ -9,21 +9,22 @@ interface StrengthCardProps {
 const StrengthCard: React.FC<StrengthCardProps> = ({ strength, index }) => {
   return (
     <div 
-      className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 card-hover"
+      className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-transform card-hover"
       style={{ 
-        animationDelay: `${index * 100}ms` 
+        animationDelay: `${index * 100}ms`,
+        boxShadow: '0 0 40px rgba(132, 0, 255, 0.15)'
       }}
     >
       <div className="space-y-4">
-        <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0d1117] rounded-lg border border-[#30363d]">
+        <div className="inline-flex items-center justify-center w-12 h-12 bg-white/[0.05] rounded-lg border border-white/10">
           <span className="text-2xl">{strength.icon}</span>
         </div>
         
         <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-[#f0f6fc]">
+          <h3 className="text-lg font-semibold text-white/90">
             {strength.title}
           </h3>
-          <p className="text-[#8b949e] text-sm leading-relaxed">
+          <p className="text-white/70 text-sm leading-relaxed">
             {strength.description}
           </p>
         </div>

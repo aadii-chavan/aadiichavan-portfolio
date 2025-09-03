@@ -33,22 +33,7 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Other Projects */}
-        {otherProjects.length > 0 && (
-          <div>
-            <h3 className="text-2xl font-semibold text-[#f0f6fc] mb-8 text-center">More Projects</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {otherProjects.map((project, index) => (
-                <div
-                  key={project.id}
-                  className="animate-fadeIn"
-                  style={{ animationDelay: `${(index + featuredProjects.length) * 200}ms` }}
-                >
-                  <ProjectCard project={project} />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* Removed More Projects section as requested */}
 
         {/* Removed the Ready for SIH Challenges card as requested */}
       </div>
