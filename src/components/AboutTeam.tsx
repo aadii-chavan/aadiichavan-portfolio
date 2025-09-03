@@ -1,30 +1,7 @@
 import React from 'react';
-import { Target, Lightbulb, Users, Trophy } from 'lucide-react';
+import MagicBento from './DefaultBento';
 
 const AboutTeam: React.FC = () => {
-  const features = [
-    {
-      icon: Target,
-      title: 'Mission-Driven',
-      description: 'Focused on creating impactful solutions that address real-world challenges.'
-    },
-    {
-      icon: Lightbulb,
-      title: 'Innovation First',
-      description: 'Embracing cutting-edge technologies to build tomorrow\'s solutions today.'
-    },
-    {
-      icon: Users,
-      title: 'Collaborative',
-      description: 'Strong teamwork and diverse expertise driving exceptional results.'
-    },
-    {
-      icon: Trophy,
-      title: 'Excellence',
-      description: 'Committed to delivering high-quality, scalable, and maintainable solutions.'
-    }
-  ];
-
   return (
     <section id="about" className="section-padding bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,19 +42,19 @@ const AboutTeam: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {features.map((feature, index) => (
-              <div 
-                key={index}
-                className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 card-hover"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#0d1117] rounded-lg border border-[#30363d] mb-4">
-                  <feature.icon className="w-6 h-6 text-[#58a6ff]" />
-                </div>
-                <h4 className="text-lg font-semibold text-[#f0f6fc] mb-2">{feature.title}</h4>
-                <p className="text-[#8b949e] text-sm leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
+          <div>
+            <MagicBento 
+              textAutoHide={true}
+              enableStars={true}
+              enableSpotlight={true}
+              enableBorderGlow={true}
+              enableTilt={true}
+              enableMagnetism={true}
+              clickEffect={true}
+              spotlightRadius={300}
+              particleCount={12}
+              glowColor="132, 0, 255"
+            />
           </div>
         </div>
       </div>
