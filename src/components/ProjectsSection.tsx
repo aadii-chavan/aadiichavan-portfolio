@@ -50,29 +50,7 @@ const ProjectsSection: React.FC = () => {
           </div>
         )}
 
-        <div className="mt-16 text-center">
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-[#f0f6fc] mb-4">Ready for SIH Challenges</h3>
-            <p className="text-[#8b949e] leading-relaxed mb-6">
-              Our diverse portfolio demonstrates our ability to tackle complex problems across different domains. 
-              From healthcare to smart cities, we bring experience, innovation, and dedication to every challenge.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-full text-sm text-[#58a6ff] font-medium">
-                Web Development
-              </span>
-              <span className="px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-full text-sm text-[#58a6ff] font-medium">
-                Mobile Apps
-              </span>
-              <span className="px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-full text-sm text-[#58a6ff] font-medium">
-                Machine Learning
-              </span>
-              <span className="px-4 py-2 bg-[#0d1117] border border-[#30363d] rounded-full text-sm text-[#58a6ff] font-medium">
-                IoT Solutions
-              </span>
-            </div>
-          </div>
-        </div>
+        {/* Removed the Ready for SIH Challenges card as requested */}
       </div>
     </section>
   );
