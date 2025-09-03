@@ -1,6 +1,5 @@
 import React from 'react';
-import { teamMembers } from '../data/teamData';
-import MemberCard from './MemberCard';
+import MagicBento from './MagicBento';
 
 const TeamSection: React.FC = () => {
   return (
@@ -13,17 +12,19 @@ const TeamSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div
-              key={member.id}
-              className="animate-fadeIn"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <MemberCard member={member} />
-            </div>
-          ))}
-        </div>
+        <MagicBento 
+          textAutoHide={true}
+          enableStars={true}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={true}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={12}
+          glowColor="132, 0, 255"
+          className="mt-2"
+        />
 
         <div className="mt-16 text-center">
           <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-8 max-w-2xl mx-auto">
