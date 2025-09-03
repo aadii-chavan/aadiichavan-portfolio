@@ -54,9 +54,7 @@ const Header: React.FC = () => {
           className="shadow-[0_10px_30px_rgba(0,0,0,0.35)] border border-white/10"
         >
           <div className="w-full flex items-center justify-between px-4 md:px-6">
-            <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold gradient-text">5.5 Peeps</h1>
-            </div>
+            <div className="flex-shrink-0" />
 
             <nav className="hidden md:block">
               <div className="flex items-center space-x-8">
