@@ -214,6 +214,33 @@ export const teamProjects: Project[] = [
     description: "Collaborative platform for sharing educational resources with peer-to-peer learning features.",
     tags: ["React", "Node.js", "Socket.io", "MongoDB"],
     github: "https://github.com"
+  },
+  {
+    id: 17,
+    title: "E-Commerce Analytics Platform",
+    description: "Advanced business intelligence platform for e-commerce with real-time sales tracking, customer behavior analysis, and predictive insights.",
+    tags: ["React", "Python", "Django", "PostgreSQL", "Chart.js"],
+    featured: true,
+    link: "https://example.com",
+    github: "https://github.com"
+  },
+  {
+    id: 18,
+    title: "Cybersecurity Threat Detection",
+    description: "AI-powered system for detecting and preventing cybersecurity threats in real-time with machine learning algorithms.",
+    tags: ["Python", "TensorFlow", "React", "Elasticsearch", "Docker"],
+    featured: true,
+    link: "https://example.com",
+    github: "https://github.com"
+  },
+  {
+    id: 19,
+    title: "Financial Portfolio Tracker",
+    description: "Comprehensive financial management platform for tracking investments, analyzing market trends, and portfolio optimization.",
+    tags: ["React", "Node.js", "TypeScript", "PostgreSQL", "WebSocket"],
+    featured: true,
+    link: "https://example.com",
+    github: "https://github.com"
   }
 ];
 
