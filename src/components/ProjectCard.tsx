@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '../data/teamData';
+import SpotlightCard from './SpotlightCard';
 
 interface ProjectCardProps {
   project: Project;
@@ -8,9 +9,9 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div 
+    <SpotlightCard
       className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-transform card-hover h-80"
-      style={{ boxShadow: '0 0 40px rgba(132, 0, 255, 0.15)' }}
+      spotlightColor="rgba(0, 229, 255, 0.2)"
     >
       <div className="space-y-4 h-full flex flex-col">
         <div className="space-y-2 flex-grow">
@@ -60,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-    </div>
+    </SpotlightCard>
   );
 };
 
