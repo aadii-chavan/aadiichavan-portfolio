@@ -18,6 +18,8 @@ export interface GlassSurfaceProps {
   blueOffset?: number;
   xChannel?: 'R' | 'G' | 'B';
   yChannel?: 'R' | 'G' | 'B';
+  /** When true, prefers CSS backdrop-filter for a frosted glass feel over SVG filter */
+  preferBackdrop?: boolean;
   mixBlendMode?:
     | 'normal'
     | 'multiply'
@@ -76,6 +78,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   blueOffset = 20,
   xChannel = 'R',
   yChannel = 'G',
+  preferBackdrop = false,
   mixBlendMode = 'difference',
   className = '',
   style = {}
@@ -219,7 +222,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       '--glass-saturation': saturation
     } as React.CSSProperties;
 
-    const svgSupported = supportsSVGFilters();
+    const svgSupported = !preferBackdrop && supportsSVGFilters();
     const backdropFilterSupported = supportsBackdropFilter();
 
     if (svgSupported) {
