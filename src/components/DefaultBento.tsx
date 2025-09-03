@@ -63,7 +63,7 @@ const cardData: BentoCardProps[] = [
   {
     color: '#060010',
     // title: 'Rudra Ingole',
-    description: 'Hentai Consumer',
+    description: 'Content Specialist',
     label: 'Rudra Ingole'
   }
 ];
