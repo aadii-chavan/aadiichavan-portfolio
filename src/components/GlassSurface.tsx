@@ -261,10 +261,10 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
         } else {
           return {
             ...baseStyles,
-            background: 'rgba(255, 255, 255, 0.1)',
-            backdropFilter: 'blur(12px) saturate(1.8) brightness(1.2)',
-            WebkitBackdropFilter: 'blur(12px) saturate(1.8) brightness(1.2)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            background: `rgba(0, 0, 0, ${typeof backgroundOpacity === 'number' ? backgroundOpacity : 0.18})`,
+            backdropFilter: `blur(${blur}px) saturate(${saturation}) brightness(1.0)`,
+            WebkitBackdropFilter: `blur(${blur}px) saturate(${saturation}) brightness(1.0)`,
+            border: '1px solid rgba(255, 255, 255, 0.14)',
             boxShadow: `inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
                         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1)`
           };
@@ -281,9 +281,9 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
         } else {
           return {
             ...baseStyles,
-            background: 'rgba(255, 255, 255, 0.25)',
-            backdropFilter: 'blur(12px) saturate(1.8) brightness(1.1)',
-            WebkitBackdropFilter: 'blur(12px) saturate(1.8) brightness(1.1)',
+            background: `rgba(255, 255, 255, ${typeof backgroundOpacity === 'number' ? backgroundOpacity : 0.25})`,
+            backdropFilter: `blur(${blur}px) saturate(${saturation}) brightness(1.1)`,
+            WebkitBackdropFilter: `blur(${blur}px) saturate(${saturation}) brightness(1.1)`,
             border: '1px solid rgba(255, 255, 255, 0.3)',
             boxShadow: `0 8px 32px 0 rgba(31, 38, 135, 0.2),
                         0 2px 16px 0 rgba(31, 38, 135, 0.1),

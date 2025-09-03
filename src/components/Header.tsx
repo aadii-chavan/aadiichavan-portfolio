@@ -39,19 +39,19 @@ const Header: React.FC = () => {
           width="100%" 
           height={68} 
           borderRadius={50}
-          brightness={12}
-          opacity={0.88}
-          blur={18}
-          backgroundOpacity={isScrolled ? 0.6 : 0.45}
-          saturation={2}
-          displace={1}
+          brightness={8}
+          opacity={0.9}
+          blur={26}
+          backgroundOpacity={isScrolled ? 0.36 : 0.28}
+          saturation={1.6}
+          displace={0.5}
           distortionScale={-160}
           redOffset={4}
           greenOffset={12}
           blueOffset={20}
-          preferBackdrop={false}
+          preferBackdrop={true}
           mixBlendMode="normal"
-          className="shadow-[0_10px_30px_rgba(0,0,0,0.35)] border border-white/10"
+          className="border border-white/10 bg-black/40 shadow-[0_10px_30px_rgba(0,0,0,0.35)] backdrop-blur-xl"
         >
           <div className="w-full flex items-center justify-between px-4 md:px-6">
             <div className="flex-shrink-0">
