@@ -46,7 +46,7 @@ const cardData: BentoCardProps[] = [
     color: '#060010',
     // title: 'Bhargav Adhe',
     description: 'Group Leader - Database & Auth',
-    label: 'Bhargav Adhe'
+    label: 'Bhargav Ade'
   },
   {
     color: '#060010',
