@@ -618,6 +618,39 @@ const MagicBento: React.FC<BentoProps> = ({
             box-shadow: 0 4px 20px rgba(46, 24, 78, 0.4), 0 0 30px rgba(${glowColor}, 0.2);
           }
           
+          .card {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: -0.01em;
+          }
+          
+          .card__label {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            line-height: 1.4;
+          }
+          
+          .card__title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.025em;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+          }
+          
+          .card__description {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #e6edf3;
+            line-height: 1.5;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+          }
+          
           .particle::before {
             content: '';
             position: absolute;
@@ -708,14 +741,14 @@ const MagicBento: React.FC<BentoProps> = ({
                   clickEffect={clickEffect}
                   enableMagnetism={enableMagnetism}
                 >
-                  <div className="card__header flex justify-between gap-3 relative text-white">
-                    <span className="card__label text-lg font-semibold" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.02em'}}>{card.label}</span>
+                  <div className="card__header flex justify-between gap-3 relative">
+                    <span className="card__label">{card.label}</span>
                   </div>
-                  <div className="card__content flex flex-col relative text-white">
-                    <h3 className="card__title font-bold text-xl m-0 mb-2" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.01em'}}>
+                  <div className="card__content flex flex-col relative">
+                    <h3 className="card__title">
                       {card.title}
                     </h3>
-                    <p className="card__description text-base leading-6 opacity-95" style={{fontFamily: 'Poppins, sans-serif', color: '#8b949e', marginTop: '0.25rem'}}>
+                    <p className="card__description">
                       {card.description}
                     </p>
                   </div>
@@ -838,14 +871,14 @@ const MagicBento: React.FC<BentoProps> = ({
                   el.addEventListener('click', handleClick);
                 }}
               >
-                <div className="card__header flex justify-between gap-3 relative text-white">
-                  <span className="card__label text-lg font-semibold" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.02em'}}>{card.label}</span>
+                <div className="card__header flex justify-between gap-3 relative">
+                  <span className="card__label">{card.label}</span>
                 </div>
-                <div className="card__content flex flex-col relative text-white">
-                  <h3 className="card__title font-bold text-xl m-0 mb-2" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.01em'}}>
+                <div className="card__content flex flex-col relative">
+                  <h3 className="card__title">
                     {card.title}
                   </h3>
-                  <p className="card__description text-base leading-6 opacity-95" style={{fontFamily: 'Poppins, sans-serif', color: '#8b949e', marginTop: '0.25rem'}}>
+                  <p className="card__description">
                     {card.description}
                   </p>
                 </div>
