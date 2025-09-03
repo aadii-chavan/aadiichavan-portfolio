@@ -39,7 +39,7 @@ const cardData: BentoCardProps[] = [
   {
     color: '#060010',
     // title: 'Arya Joshi',
-    description: 'Only female',
+    description: 'UI/UX Designer',
     label: 'Arya Joshi'
   },
   {
