@@ -1,10 +1,12 @@
 import React from 'react';
 import { Strength } from '../data/teamData';
 import { Code, Workflow, Rocket, Palette, Users, CheckCircle2 } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 interface StrengthCardProps {
   strength: Strength;
   index: number;
+  spotlightColor?: `rgba(${number}, ${number}, ${number}, ${number})`;
 }
 
 const getIconForStrength = (title: string) => {
@@ -18,16 +20,13 @@ const getIconForStrength = (title: string) => {
   return Code;
 };
 
-const StrengthCard: React.FC<StrengthCardProps> = ({ strength, index }) => {
+const StrengthCard: React.FC<StrengthCardProps> = ({ strength, index, spotlightColor = 'rgba(132, 0, 255, 0.25)' }) => {
   const IconComponent = getIconForStrength(strength.title);
 
   return (
-    <div 
-      className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-transform card-hover"
-      style={{ 
-        animationDelay: `${index * 100}ms`,
-        boxShadow: '0 0 40px rgba(132, 0, 255, 0.15)'
-      }}
+    <SpotlightCard
+      spotlightColor={spotlightColor}
+      className="transition-transform card-hover"
     >
       <div className="space-y-4">
         <div className="inline-flex items-center justify-center w-12 h-12 bg-white/[0.05] rounded-lg border border-white/10">
@@ -43,7 +42,7 @@ const StrengthCard: React.FC<StrengthCardProps> = ({ strength, index }) => {
           </p>
         </div>
       </div>
-    </div>
+    </SpotlightCard>
   );
 };
 

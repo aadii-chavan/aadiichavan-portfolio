@@ -14,13 +14,25 @@ const StrengthsSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamStrengths.map((strength, index) => (
-            <StrengthCard 
-              key={strength.id} 
-              strength={strength} 
-              index={index}
-            />
-          ))}
+          {teamStrengths.map((strength, index) => {
+            const spotlightPalette: Array<`rgba(${number}, ${number}, ${number}, ${number})`> = [
+              'rgba(132, 0, 255, 0.25)',   // purple glow
+              'rgba(0, 200, 255, 0.25)',   // cyan glow
+              'rgba(255, 120, 0, 0.25)',   // orange glow
+              'rgba(0, 255, 150, 0.25)',   // mint glow
+              'rgba(255, 0, 100, 0.25)',   // pink-red glow
+              'rgba(255, 220, 0, 0.25)'    // yellow glow
+            ];
+            const spotlightColor = spotlightPalette[index % spotlightPalette.length];
+            return (
+              <StrengthCard 
+                key={strength.id} 
+                strength={strength} 
+                index={index}
+                spotlightColor={spotlightColor}
+              />
+            );
+          })}
         </div>
 
         {/* Removed the Project Success Rate, Average Delivery Time, and Client Satisfaction stats as requested */}
