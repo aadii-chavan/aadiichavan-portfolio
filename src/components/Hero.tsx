@@ -32,11 +32,10 @@ const Hero: React.FC = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white/90">
-              Designed for Designers to showcase their work
+            We design and build projects that matter
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-              Helping startups and brands to craft expressive and engaging solutions for their software needs.
-            </p>
+            We are 5.5 Peeps, a team of six innovators passionate about solving real-world problems with technology. Explore our skills, projects, and strengths as we gear up for SIH.            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
