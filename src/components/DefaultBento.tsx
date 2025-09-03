@@ -32,39 +32,39 @@ const MOBILE_BREAKPOINT = 768;
 const cardData: BentoCardProps[] = [
   {
     color: '#060010',
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Insights'
+    // title: 'Parth Barde',
+    description: 'Frontend Specialist',
+    label: 'Parth Barde'
   },
   {
     color: '#060010',
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
+    // title: 'Arya Joshi',
+    description: 'Only female',
+    label: 'Arya Joshi'
   },
   {
     color: '#060010',
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Teamwork'
+    // title: 'Bhargav Adhe',
+    description: 'Group Leader - Database & Auth',
+    label: 'Bhargav Adhe'
   },
   {
     color: '#060010',
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    // title: 'Aditya Chavan',
+    description: 'Co-Leader - DevOps & AI Engineer',
+    label: 'Aditya Chavan'
   },
   {
     color: '#060010',
-    title: 'Integration',
-    description: 'Connect favorite tools',
-    label: 'Connectivity'
+    // title: 'Ashish Panda',
+    description: 'Backend Architect',
+    label: 'Ashish Panda'
   },
   {
     color: '#060010',
-    title: 'Security',
-    description: 'Enterprise-grade protection',
-    label: 'Protection'
+    // title: 'Rudra Ingole',
+    description: 'Hentai Consumer',
+    label: 'Rudra Ingole'
   }
 ];
 
@@ -709,15 +709,13 @@ const MagicBento: React.FC<BentoProps> = ({
                   enableMagnetism={enableMagnetism}
                 >
                   <div className="card__header flex justify-between gap-3 relative text-white">
-                    <span className="card__label text-base">{card.label}</span>
+                    <span className="card__label text-lg font-semibold" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.02em'}}>{card.label}</span>
                   </div>
                   <div className="card__content flex flex-col relative text-white">
-                    <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
+                    <h3 className="card__title font-bold text-xl m-0 mb-2" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.01em'}}>
                       {card.title}
                     </h3>
-                    <p
-                      className={`card__description text-xs leading-5 opacity-90 ${textAutoHide ? 'text-clamp-2' : ''}`}
-                    >
+                    <p className="card__description text-base leading-6 opacity-95" style={{fontFamily: 'Poppins, sans-serif', color: '#8b949e', marginTop: '0.25rem'}}>
                       {card.description}
                     </p>
                   </div>
@@ -841,13 +839,13 @@ const MagicBento: React.FC<BentoProps> = ({
                 }}
               >
                 <div className="card__header flex justify-between gap-3 relative text-white">
-                  <span className="card__label text-base">{card.label}</span>
+                  <span className="card__label text-lg font-semibold" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.02em'}}>{card.label}</span>
                 </div>
                 <div className="card__content flex flex-col relative text-white">
-                  <h3 className={`card__title font-normal text-base m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
+                  <h3 className="card__title font-bold text-xl m-0 mb-2" style={{fontFamily: 'Poppins, sans-serif', color: '#f0f6fc', letterSpacing: '0.01em'}}>
                     {card.title}
                   </h3>
-                  <p className={`card__description text-xs leading-5 opacity-90 ${textAutoHide ? 'text-clamp-2' : ''}`}>
+                  <p className="card__description text-base leading-6 opacity-95" style={{fontFamily: 'Poppins, sans-serif', color: '#8b949e', marginTop: '0.25rem'}}>
                     {card.description}
                   </p>
                 </div>
