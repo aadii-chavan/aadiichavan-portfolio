@@ -1,8 +1,7 @@
 import React from 'react';
-import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com', label: 'GitHub' },
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <h3 className="text-2xl font-bold gradient-text">5.5 Peeps</h3>
+            <h3 className="text-2xl font-bold gradient-text">Quantum Lotus</h3>
             <p className="text-[#8b949e] leading-relaxed max-w-md">
               A passionate team of developers and innovators participating in Smart India Hackathon, 
               building solutions that make a difference.
@@ -79,15 +78,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-[#30363d] flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex items-center space-x-2 text-[#8b949e] mb-4 sm:mb-0">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>by 5.5 Peeps</span>
-          </div>
-          <div className="text-[#8b949e] text-sm">
-            © {currentYear} 5.5 Peeps. All rights reserved.
-          </div>
+        <div className="mt-12 pt-8 border-t border-[#30363d]">
         </div>
       </div>
     </footer>

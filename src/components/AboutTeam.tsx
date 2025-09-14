@@ -8,7 +8,7 @@ const AboutTeam: React.FC = () => {
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text">About Our Team</h2>
           <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
-            We are 5.5 Peeps, a dynamic team of tech enthusiasts participating in Smart India Hackathon. 
+            We are Quantum Lotus, a dynamic team of tech enthusiasts participating in Smart India Hackathon. 
             Our diverse skill set and shared passion for innovation drive us to create solutions that matter.
           </p>
         </div>

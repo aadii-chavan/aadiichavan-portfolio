@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-10">
+        <div className="space-y-10 [&>*:last-child]:mb-0">
           <div className="flex flex-col items-center gap-4" />
 
           <div className="space-y-6">
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             We design and build projects that matter
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            We are 5.5 Peeps, a team of six innovators passionate about solving real-world problems with technology. Explore our skills, projects, and strengths as we gear up for SIH.            </p>
+            We are Quantum Lotus, a team of six innovators passionate about solving real-world problems with technology. Explore our skills, projects, and strengths as we gear up for SIH.            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             </button>
           </div>
 
-          <div className="pt-6 relative left-1/2 -translate-x-1/2 w-screen">
+          <div className="pt-24 pb-0 relative left-1/2 -translate-x-1/2 w-screen">
             <LogoLoop
               logos={techLogos}
               speed={100}
