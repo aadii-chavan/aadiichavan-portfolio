@@ -117,15 +117,15 @@ As participants in the Smart India Hackathon, we are committed to:
 
 ## Contact
 
-**Team 5.5 Peeps**
-- Email: team@5peeps.com
+**Team Quantum Lotus**
+- Email: workwithaadichavan@gmail.com
 - LinkedIn: [Team LinkedIn Profile]
 - GitHub: [Team GitHub Organization]
 
 ---
 
-*Built with ❤️ by 5.5 Peeps for Smart India Hackathon*
+*Built with ❤️ by Quantum Lotus for Smart India Hackathon*
 
 ## License
 
-This project is private and confidential. All rights reserved © 2024 5.5 Peeps.
+This project is private and confidential. All rights reserved © 2025 Quantum Lotus.
