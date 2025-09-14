@@ -26,7 +26,7 @@ const OurSkillsSection: React.FC = () => {
           className="mt-2"
         />
 
-        {/* Removed the Why "5.5 Peeps" section as requested */}
+        {/* Removed the Why "Quantum Lotus" section as requested */}
       </div>
     </section>
   );

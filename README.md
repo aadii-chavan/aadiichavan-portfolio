@@ -1,6 +1,6 @@
 # Quantum Lotus - Team Portfolio
 
-A sophisticated portfolio website showcasing the skills, projects, and capabilities of **5.5 Peeps**, a dynamic team of tech enthusiasts participating in the Smart India Hackathon (SIH).
+A sophisticated portfolio website showcasing the skills, projects, and capabilities of **Quantum Lotus**, a dynamic team of tech enthusiasts participating in the Smart India Hackathon (SIH).
 
 ## About
 
