@@ -32,10 +32,10 @@ const Hero: React.FC = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white/90">
-            We design and build projects that matter
+            Building Bold Ideas Into Clean Code—and Make It Look Easy.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            We are Quantum Lotus, a team of six innovators passionate about solving real-world problems with technology. Explore our skills, projects, and strengths as we gear up for SIH.            </p>
+            I design sleek, high-performance digital experiences that don’t just work—they stand out. Clean code, sharp visuals, and the confidence to ship ideas that turn heads.            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

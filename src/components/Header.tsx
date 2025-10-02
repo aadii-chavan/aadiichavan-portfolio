@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         >
           <div className="w-full flex items-center justify-between px-4 md:px-6">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-white/90">Quantum Lotus</h1>
+              <h1 className="text-xl font-bold text-white/90">aadii chavan</h1>
             </div>
 
             <nav className="hidden md:block">
