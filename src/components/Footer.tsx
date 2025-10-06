@@ -14,10 +14,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <h3 className="text-2xl font-bold gradient-text">Quantum Lotus</h3>
+            <h3 className="text-2xl font-bold gradient-text">aadii chavan</h3>
             <p className="text-[#8b949e] leading-relaxed max-w-md">
-              A passionate team of developers and innovators participating in Smart India Hackathon, 
-              building solutions that make a difference.
+              Personal portfolio showcasing my work across web, mobile, and AI/ML. I build performant, user‑centric products with clean engineering and modern tooling.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -39,8 +38,8 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold text-[#f0f6fc]">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { name: 'About Us', href: '#about' },
-                { name: 'Team', href: '#team' },
+                { name: 'About Me', href: '#about' },
+                { name: 'Skills', href: '#skills' },
                 { name: 'Projects', href: '#projects' },
                 { name: 'Strengths', href: '#strengths' }
               ].map((link) => (
