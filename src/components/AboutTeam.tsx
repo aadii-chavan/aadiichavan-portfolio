@@ -1,5 +1,5 @@
 import React from "react";
-import MagicBento from "./DefaultBento";
+import ProfileCard from "./ProfileCard.tsx";
 
 const AboutTeam: React.FC = () => {
   return (
@@ -52,21 +52,18 @@ const AboutTeam: React.FC = () => {
           </div>
 
           <div>
-            <div
-              className="lg:scale-125 md:scale-110 scale-105 transition-transform duration-300"
-              style={{ maxWidth: "none" }}
-            >
-              <MagicBento
-                textAutoHide={true}
-                enableStars={true}
-                enableSpotlight={true}
-                enableBorderGlow={true}
+            <div className="relative w-full max-w-sm mx-auto">
+              <ProfileCard
+                name="Aditya Chavan"
+                title="Software Engineer"
+                handle="aadii_chavan"
+                status="Online"
+                contactText="Contact Me"
+                avatarUrl="/src/assets/logo.png"
+                showUserInfo={true}
                 enableTilt={true}
-                enableMagnetism={true}
-                clickEffect={true}
-                spotlightRadius={300}
-                particleCount={12}
-                glowColor="132, 0, 255"
+                enableMobileTilt={false}
+                onContactClick={() => console.log('Contact clicked')}
               />
             </div>
           </div>
