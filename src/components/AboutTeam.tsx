@@ -59,7 +59,7 @@ const AboutTeam: React.FC = () => {
                 handle="aadii_chavan"
                 status="Online"
                 contactText="Contact Me"
-                avatarUrl="/src/assets/logo.png"
+                avatarUrl="/src/assets/srk.jpg"
                 showUserInfo={true}
                 enableTilt={true}
                 enableMobileTilt={false}
