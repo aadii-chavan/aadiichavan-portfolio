@@ -13,7 +13,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
         <img 
           src={member.image} 
           alt={member.name}
-          className="w-full h-48 object-cover"
+          className="w-full h-40 md:h-48 object-cover"
         />
       </div>
       

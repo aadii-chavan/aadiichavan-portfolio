@@ -88,12 +88,12 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden px-4 sm:px-6 lg:px-8 pb-2">
           <GlassSurface 
-            width="350px" 
-            height="200px" 
-            borderRadius={50}
+            width="100%" 
+            height="auto" 
+            borderRadius={24}
             brightness={0}
             opacity={0}
-            blur={100}
+            blur={24}
             backgroundOpacity={45}
             saturation={0}
             displace={0}
@@ -102,14 +102,14 @@ const Header: React.FC = () => {
             greenOffset={-50}
             blueOffset={-50}
             mixBlendMode="screen"
-            className="border border-white/10"
+            className="border border-white/10 w-full"
           >
             <div className="w-full px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left px-3 py-2 text-[#c9d1d9]/80 hover:text-white transition-colors duration-200"
+                  className="block w-full text-left px-3 py-3 text-base text-[#c9d1d9]/90 hover:text-white transition-colors duration-200"
                 >
                   {item.name}
                 </button>

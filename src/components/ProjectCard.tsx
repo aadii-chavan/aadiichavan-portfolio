@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       }}
     >
       <SpotlightCard
-        className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-all duration-300 h-96"
+        className="relative rounded-2xl p-6 bg-white/[0.05] border border-white/10 overflow-hidden transition-all duration-300 h-72 md:h-80 lg:h-96"
         spotlightColor="rgba(0, 229, 255, 0.2)"
       >
         <div className="space-y-4 h-full flex flex-col">
