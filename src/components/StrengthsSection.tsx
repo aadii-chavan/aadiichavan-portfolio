@@ -23,9 +23,9 @@ const StrengthsSection: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text">Our Strengths</h2>
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text">Strengths & Services</h2>
           <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
-            Core values and capabilities that drive our success in building exceptional solutions.
+            What I bring to teams and products—technical range, product sense, and delivery discipline.
           </p>
         </div>
 

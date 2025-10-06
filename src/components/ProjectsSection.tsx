@@ -10,9 +10,9 @@ const ProjectsSection: React.FC = () => {
     <section id="projects" className="section-padding bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text">Our Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text">My Projects</h2>
           <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
-            Innovative solutions crafted with cutting-edge technologies to solve real-world problems.
+            Selected work across web, mobile, and AI—built with a focus on performance, UX, and clear engineering.
           </p>
         </div>
 

@@ -32,10 +32,11 @@ const Hero: React.FC = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white/90">
-            Building Bold Ideas Into Clean Code—and Make It Look Easy.
+              Full‑Stack Developer crafting web, mobile, and AI solutions.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-            I design sleek, high-performance digital experiences that don’t just work—they stand out. Clean code, sharp visuals, and the confidence to ship ideas that turn heads.            </p>
+              I build performant, polished products end‑to‑end—frontend to backend, React/Next to Node/Python, and ML systems that ship.
+            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
               className="group relative inline-flex items-center justify-center rounded-xl font-semibold text-white transition-colors shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:text-black"
             >
               <span className="relative z-[2] flex items-center gap-2 px-7 py-3">
-                <span>View Project</span>
+                <span>View Projects</span>
                 <span className="inline-block"><ArrowRight size={18} /></span>
               </span>
               <svg className="absolute inset-0 -z-0 rounded-[inherit]" width="100%" height="100%" viewBox="0 0 100 40" preserveAspectRatio="none">
@@ -57,7 +58,7 @@ const Hero: React.FC = () => {
               onClick={() => scrollToSection('#about')}
               className="px-7 py-3 rounded-xl font-semibold text-white/90 bg-white/10 border border-white/10 hover:bg-white/15 transition-colors"
             >
-              Meet Team
+              About Me
             </button>
           </div>
 

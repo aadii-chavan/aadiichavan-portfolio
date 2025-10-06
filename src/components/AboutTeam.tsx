@@ -7,7 +7,7 @@ const AboutTeam: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl md:text-5xl font-bold gradient-text">
-            About Our Team
+            About Me
           </h2>
           <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
             I craft clean, bold, and functional digital experiences. Every
@@ -23,22 +23,23 @@ const AboutTeam: React.FC = () => {
                 Redefining Digital Experiences, One Project at a Time.
               </h3>
               <p className="text-[#8b949e] leading-relaxed">
-                I bring together expertise in full-stack development, modern UI/UX design, and scalable software solutions. With a passion for clean engineering and sharp aesthetics, I turn ideas into products that perform as good as they look.
+                I’m Aadii, a full‑stack developer who builds end‑to‑end products across web, mobile, and AIML. I obsess over performance, developer ergonomics, and visual polish—shipping features that are reliable, scalable, and delightful to use.
               </p>
               <p className="text-[#8b949e] leading-relaxed">
-                From building seamless web applications to experimenting with AI-driven solutions, I thrive on challenges that demand both creativity and precision. Backed by real-world project experience and a drive to stay ahead of the curve, I’m here to build, break, and rebuild—until the result is undeniable.
+                My toolkit spans React/Next.js, Node.js, Python, and cloud‑native services; on the AI side, I work with TensorFlow/PyTorch, vector databases, and modern inference tooling. Whether it’s a production app, an API, or an ML feature, I like to ship quickly and iterate.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
               {[
-                "React",
-                "Node.js",
+                "React / Next.js",
+                "Node.js / Express",
+                "TypeScript",
                 "Python",
-                "ML/AI",
-                "Mobile Dev",
-                "UI/UX",
-                "Cloud",
+                "TensorFlow / PyTorch",
+                "React Native / Flutter",
+                "PostgreSQL / MongoDB",
+                "AWS / Firebase",
               ].map((tech) => (
                 <span
                   key={tech}
