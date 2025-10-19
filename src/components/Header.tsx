@@ -31,13 +31,13 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent pt-5 sm:pt-6`}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-2 sm:py-3">
-        <GlassSurface 
-          width="100%" 
-          height={68} 
+        <GlassSurface
+          width="100%"
+          height={68}
           borderRadius={50}
           brightness={8}
           opacity={0.9}
@@ -87,9 +87,9 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden px-3 sm:px-4 lg:px-8 pb-2">
-          <GlassSurface 
-            width="100%"  
-            height="auto" 
+          <GlassSurface
+            width="100%"
+            height="65"
             borderRadius={50}
             brightness={8}
             opacity={0.9}
