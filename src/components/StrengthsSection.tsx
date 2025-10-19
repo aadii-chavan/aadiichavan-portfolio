@@ -22,14 +22,14 @@ const StrengthsSection: React.FC = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text">Strengths & Services</h2>
-          <p className="text-xl text-[#8b949e] max-w-3xl mx-auto">
+        <div className="text-center space-y-4 mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text">Strengths & Services</h2>
+          <p className="text-lg sm:text-xl text-[#8b949e] max-w-3xl mx-auto px-4">
             What I bring to teams and products—technical range, product sense, and delivery discipline.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {teamStrengths.map((strength, index) => {
             const spotlightPalette: Array<`rgba(${number}, ${number}, ${number}, ${number})`> = [
               'rgba(132, 0, 255, 0.25)',   // purple glow

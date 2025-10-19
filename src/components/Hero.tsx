@@ -27,24 +27,24 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="space-y-10 [&>*:last-child]:mb-0">
+        <div className="space-y-6 sm:space-y-8 md:space-y-10 [&>*:last-child]:mb-0">
           <div className="flex flex-col items-center gap-4" />
 
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white/90">
+          <div className="space-y-4 sm:space-y-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white/90 leading-tight">
               Full‑Stack Developer crafting web, mobile, and AI solutions.
             </h1>
-            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed px-2">
               I build performant, polished products end‑to‑end—frontend to backend, React/Next to Node/Python, and ML systems that ship.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <button
               onClick={() => scrollToSection('#projects')}
-              className="group relative inline-flex items-center justify-center rounded-xl font-semibold text-white transition-colors shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:text-black"
+              className="group relative inline-flex items-center justify-center rounded-xl font-semibold text-white transition-colors shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:text-black w-full sm:w-auto"
             >
-              <span className="relative z-[2] flex items-center gap-2 px-7 py-3">
+              <span className="relative z-[2] flex items-center gap-2 px-6 py-3 sm:px-7">
                 <span>View Projects</span>
                 <span className="inline-block"><ArrowRight size={18} /></span>
               </span>
@@ -56,19 +56,19 @@ const Hero: React.FC = () => {
             </button>
             <button
               onClick={() => scrollToSection('#about')}
-              className="px-7 py-3 rounded-xl font-semibold text-white/90 bg-white/10 border border-white/10 hover:bg-white/15 transition-colors"
+              className="px-6 py-3 sm:px-7 rounded-xl font-semibold text-white/90 bg-white/10 border border-white/10 hover:bg-white/15 transition-colors w-full sm:w-auto"
             >
               About Me
             </button>
           </div>
 
-          <div className="pt-24 pb-0 relative left-1/2 -translate-x-1/2 w-screen">
+          <div className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-0 relative left-1/2 -translate-x-1/2 w-screen">
             <LogoLoop
               logos={techLogos}
               speed={100}
               direction="left"
-              logoHeight={65}
-              gap={60}
+              logoHeight={45}
+              gap={40}
               pauseOnHover
               scaleOnHover
               fadeOut

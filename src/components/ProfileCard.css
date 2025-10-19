@@ -16,6 +16,38 @@
   --card-radius: 30px;
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .pc-card-wrapper {
+    perspective: 300px; /* Reduced perspective for mobile */
+  }
+  
+  .pc-card {
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y)) scale(0.95);
+  }
+  
+  .pc-card-wrapper.active .pc-card {
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y)) scale(1);
+  }
+  
+  .pc-contact-btn {
+    min-height: 44px; /* iOS recommended touch target */
+    font-size: 14px;
+  }
+  
+  .pc-user-info {
+    padding: 12px;
+  }
+  
+  .pc-details h3 {
+    font-size: 1.1rem;
+  }
+  
+  .pc-details p {
+    font-size: 0.9rem;
+  }
+}
+
 .pc-card-wrapper {
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
