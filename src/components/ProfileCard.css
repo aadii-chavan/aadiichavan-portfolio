@@ -487,3 +487,10 @@
     border-radius: 50px;
   }
 }
+
+/* Force desktop card layout and sizing on mobile */
+@media (max-width: 768px) {
+  .pc-card, .pc-card-wrapper, .pc-details, .pc-user-info, .pc-mini-avatar, .pc-contact-btn, .avatar {
+    all: unset !important;
+  }
+}

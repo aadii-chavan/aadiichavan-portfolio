@@ -67,8 +67,8 @@ const Hero: React.FC = () => {
               logos={techLogos}
               speed={100}
               direction="left"
-              logoHeight={45}
-              gap={40}
+              logoHeight={55}
+              gap={50}
               pauseOnHover
               scaleOnHover
               fadeOut
