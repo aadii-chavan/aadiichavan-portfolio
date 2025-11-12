@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8">
           <div className="col-span-1 md:col-span-2 space-y-4">
-            <h3 className="text-xl sm:text-2xl font-bold gradient-text">aadii chavan</h3>
+            <h3 className="text-xl sm:text-2xl font-bold gradient-text">Drop2Dev</h3>
             <p className="text-sm sm:text-base text-[#8b949e] leading-relaxed max-w-md">
               Personal portfolio showcasing my work across web, mobile, and AI/ML. I build performant, user‑centric products with clean engineering and modern tooling.
             </p>
